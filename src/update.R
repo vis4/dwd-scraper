@@ -1,5 +1,13 @@
+#!/usr/bin/env Rscript
+
+# you need to install the R package "needs" the
+# first time you run this.
+# install.packages("needs")
+# library(needs)
+#
 needs(readr, rvest, dplyr, tidyr)
-# setwd("~/projects/dwd-wetter/r-work")
+
+args = commandArgs(trailingOnly=TRUE)
 
 dir.create('zip', showWarnings = F)
 dir.create('data', showWarnings = F)
@@ -20,10 +28,13 @@ stationen <- read_fwf(url.stationen,
                       locale = locale(encoding = 'latin1')) %>%
   mutate(from=as.Date(as.character(from), '%Y%m%d'), to=as.Date(as.character(to), '%Y%m%d'))
 
-download('historical')
+if ('--historical' %in% args) {
+	download('historical')
+}
 download('recent')
 
 sapply(stationen$id, parse)
 
 stationen %>% write_csv('out/stations.csv')
+
 
