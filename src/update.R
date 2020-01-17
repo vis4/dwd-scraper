@@ -37,4 +37,6 @@ sapply(stationen$id, parse)
 
 stationen %>% write_csv('out/stations.csv')
 
-
+f <- file('out/last-update.txt')
+writeLines(as.character(Sys.time()), file)
+close(f)
