@@ -21,9 +21,9 @@ parse <- function(station) {
     filter(TMK > -999 & TNK > -999 & TXK > -999) %>%
     mutate(date=as.Date(as.character(MESS_DATUM), '%Y%m%d')) %>%
     group_by(date) %>%
-    summarise(TMK=first(TMK), TNK=first(TNK), TXK=first(TXK)) %>%
+    summarise(TMK=first(TMK), TNK=first(TNK), TXK=first(TXK), RSK=first(RSK), SDK=first(SDK)) %>%
     arrange(desc(date)) %>%
-    select(date, TMK, TNK, TXK)
+    select(date, TMK, TNK, TXK, RSK, SDK)
 
   # fix start and end date in stationen list (<<- assigns to global var)
   stationen$to[stationen$id == station] <<- both$date[1]
