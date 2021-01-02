@@ -7,13 +7,6 @@
 #
 needs(readr, rvest, dplyr, tidyr)
 
-d <- read_csv('~/projects/dwd-scraper/out/stations/00430.csv')
-needs(ggplot2)
-
-d %>% filter(SHK_TAG>0) %>%
-  mutate(year=as.integer(format(date, '%Y'))) %>%
-  ggplot(aes(x=year)) + geom_bar()
-
 args = commandArgs(trailingOnly=TRUE)
 
 dir.create('zip', showWarnings = F)
