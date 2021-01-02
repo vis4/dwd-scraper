@@ -5,7 +5,6 @@
 # install.packages("needs")
 # library(needs)
 #
-source("./needs.R")
 needs(readr, rvest, dplyr, tidyr)
 
 d <- read_csv('~/projects/dwd-scraper/out/stations/00430.csv')
