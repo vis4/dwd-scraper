@@ -1,3 +1,5 @@
+job: update run upload
+
 run:
 	Rscript src/update.R
 
