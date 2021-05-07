@@ -1,6 +1,6 @@
 # needs('remotes')
 # remotes::install_github("retostauffer/Rmosmix")
-needs(aiRthermo, ggplot2, tidyverse, readxl)
+needs(aiRthermo, ggplot2, tidyverse, readxl, jsonlite)
 library("mosmix")
 
 # get list of stations and their dwd ids
@@ -10,42 +10,130 @@ station_id_map <- read_excel('ha_messnetz.xls') %>%
               select(id=STATIONSKENNUNG, name=STATIONSNAME, dwdid=STATIONS_ID))
 
 
-add_forecast <- function(dwd_station_id) {
-  print(dwd_station_id)
-  stationen$forecast[stationen$id == dwd_station_id] <<- F
+add_forecast_brightsky <- function(dwd_station_id) {
   datafile <- paste0('out/stations/', dwd_station_id, '.csv')
   if (file.exists(datafile)) {
-    data <- read_csv(datafile) %>% mutate(forecast=F)
+    data <- read_csv(datafile)
     if (nrow(data) < 1) {
-      return();
+      return()
     }
-    last_date <- as.Date(max(levels(data$date)))
+    last_date <- as.Date(max(data$date))
+    if (is.na(last_date) | Sys.Date() - last_date > 4) return()
+    last_date <- last_date+1
+    weather <- tibble()
+    while (last_date <= Sys.Date()+1) {
+      url <- paste0('https://api.brightsky.dev/weather?dwd_station_id=', dwd_station_id, '&date=', last_date)
+      df <- fromJSON(url)$weather
+      if (nrow(df) > 0) {
+        weather <- bind_rows(weather, df)
+      }
+      last_date <- last_date+1
+    }
+
+    forecasts <- weather %>% 
+      unique() %>% 
+      mutate(timestamp=as.POSIXct(timestamp, format='%Y-%m-%dT%H:%M:%S', tz='UTC')) %>% 
+      mutate(date=as.Date(timestamp, tz='UTC')) %>%
+      group_by(date) %>%
+      summarise(c=n(),
+                TNK=round(min(temperature), 2), 
+                TMK=round(mean(temperature), 2),
+                TXK=round(max(temperature), 2),
+                RSK=round(sum(precipitation), 2),
+                SDK=round(sum(sunshine/60),2)) %>% 
+      filter(c == 24) %>% 
+      select(-c)
+    
+    if (nrow(forecasts) > 0) {
+      bind_rows(data, forecasts) %>%
+        arrange(desc(date)) %>% 
+        write_csv(paste0('out/stations/', dwd_station_id, '-fc.csv'))  
+      stationen$forecast[stationen$id == dwd_station_id] <<- T
+    }
+  }
+}
+
+add_forecast <- function(dwd_station_id) {
+  print(dwd_station_id)
+  # stationen$forecast[stationen$id == dwd_station_id] <<- F
+  datafile <- paste0('out/stations/', dwd_station_id, '.csv')
+  if (file.exists(datafile)) {
+    data <- read_csv(datafile) %>% mutate(forecast=0)
+    if (nrow(data) < 1) {
+      return()
+    }
+    last_date <- as.Date(max(data$date))
+    if (is.na(last_date) | Sys.Date() - last_date > 4) return()
     s <- station_id_map %>% filter(dwdid == as.numeric(dwd_station_id))
     if (nrow(s) == 1) {
       wmo <- s$id[1]
       print(paste0('  found wmo station ', wmo))
+      
+      # get current weather
+      current <- tryCatch({
+        read_csv2(paste0('https://opendata.dwd.de/weather/weather_reports/poi/',
+                                            str_replace(sprintf('%-5s', wmo), ' ', '_'), '-BEOB.csv'),
+                                     skip = 2,
+                                     na = c('', '---'),
+                                     locale = locale(decimal_mark =',',
+                                                     grouping_mark = '.')) %>%
+          filter(row_number() > 2) %>% 
+          select(date=Datum,
+                 time=`Uhrzeit (UTC)`,
+                 temp=`Temperatur (2m)`,
+                 precip=`Niederschlag (letzte Stunde)`,
+                 sunshine=`Sonnenscheindauer (letzte Stunde)`) %>% 
+          mutate(datetime=as.POSIXct(paste(date, time), format='%d.%m.%y %H:%M:%S'),
+                 error=0) %>% 
+          select(-date, -time) %>% 
+          filter(!is.na(temp) & !is.na(precip))}, error=function(cond) {
+            tibble()
+          })
+      
+      
+      # complement with
+      all <- tibble()
+      if (nrow(current) > 0) {
+        all <- current  
+      }
+      
       while (last_date < Sys.Date()) {
         print(paste0('  loading forecast from ',last_date))
         fc <- tryCatch({
           mosmix_forecast(wmo, format(last_date, '%Y%m%d'))
         }, error=function(cond){
-          F
+          NULL
         })
-        if (fc != F) {
+        if (!is.null(fc)) {
           all = bind_rows(all, fc)
         }
         last_date <- last_date+1
       }
-      forecasts <- all %>% 
-        group_by(date) %>% 
-        top_n(-1, err) %>% 
-        arrange(date) %>% 
-        select(-err)
       
-      if (nrow(forecasts) > 0) {
-        bind_rows(data, forecasts) %>%
-          write_csv(paste0('out/stations/', dwd_station_id, '-fc.csv'))  
-        stationen$forecast[stationen$id == dwd_station_id] <<- T
+      forecasts.g <- all %>% 
+        group_by(datetime) %>% 
+        top_n(-1, error) %>% 
+        mutate(date=as.Date(datetime)) %>% 
+        group_by(date) %>%
+        filter(n() == 24)
+      
+      if (nrow(forecasts.g) > 0) {
+        forecasts <- forecasts.g %>% 
+          summarise(
+            TNK=round(min(temp), 2), 
+            TMK=round(mean(temp), 2),
+            TXK=round(max(temp), 2),
+            RSK=round(sum(precip), 2),
+            SDK=round(sum(sunshine),2)
+          ) %>% 
+          mutate(forecast=1)
+        
+        if (nrow(forecasts) > 0) {
+          bind_rows(data, forecasts) %>%
+            arrange(desc(date)) %>% 
+            write_csv(paste0('out/stations/', dwd_station_id, '-fc.csv'))  
+          stationen$forecast[stationen$id == dwd_station_id] <<- T
+        }
       }
     }  
   }
@@ -63,34 +151,40 @@ mosmix_forecast <- function(station_id, after_date) {
   datetime <- get_datetime(doc)
   meta     <- get_meta_info(doc)
   
-  # fcst1 <- get_forecasts(station_id, doc, datetime, meta, as.zoo = T)
-  # plot(fcst1)
   
-  fcst2 <- get_forecasts(station_id, doc, datetime, meta, as.zoo = F)
+  fcst2 <- mosmix::get_forecasts(station_id, doc, datetime, meta, as.zoo = F)
   
-  out <- fcst2 %>%
-    mutate(date=format(datetime, '%Y-%m-%d')) %>%
-    filter(date>as.Date(after_date, '%Y%m%d')) %>% 
-    group_by(date) %>% 
-    summarise(
-      TNK=min(K2C(TTT)), 
-      TMK=mean(K2C(TTT)), 
-      TXK=max(K2C(TTT)), 
-      RSK=sum(RR1c),
-      SDK=round(sum(SunD1/3600),2), 
-      err=mean(E_TTT), 
-      forecast=TRUE)
-  
-  # fcst2 %>% ggplot(aes(x=datetime)) +
-  #   geom_ribbon(aes(ymin=K2C(TTT-E_TTT), ymax=K2C(TTT+E_TTT)), fill='red', alpha=0.1) +
-  #   geom_line(aes(y=K2C(TTT)), color='red') +
-  #   geom_ribbon(aes(ymin=K2C(Td-E_Td), ymax=K2C(Td+E_Td)), fill='green', alpha=0.1) +
-  #   geom_line(aes(y=K2C(Td)), color='green')
-  # 
-  # fcst2 %>% ggplot(aes(x=datetime)) +
-  #   geom_col(aes(y=RR1c), color='blue')
-  
-  out
+  if (!is.null(fcst2)) {
+    out <- fcst2 %>%
+      mutate(date=format(datetime, '%Y-%m-%d')) %>%
+      filter(date>as.Date(after_date, '%Y%m%d')) %>% 
+      transmute(datetime,
+                temp=K2C(TTT),
+                precip=RR1c,
+                sunshine=SunD1/3600,
+                error=E_TTT)
+      
+      # group_by(date) %>% 
+      # summarise(
+      #   TNK=min(K2C(TTT)), 
+      #   TMK=mean(K2C(TTT)), 
+      #   TXK=max(K2C(TTT)), 
+      #   RSK=sum(RR1c),
+      #   SDK=round(sum(SunD1/3600),2), 
+      #   err=mean(E_TTT)) %>% 
+      # mutate(forecast=TRUE)
+    # fcst2 %>% ggplot(aes(x=datetime)) +
+    #   geom_ribbon(aes(ymin=K2C(TTT-E_TTT), ymax=K2C(TTT+E_TTT)), fill='red', alpha=0.1) +
+    #   geom_line(aes(y=K2C(TTT)), color='red') +
+    #   geom_ribbon(aes(ymin=K2C(Td-E_Td), ymax=K2C(Td+E_Td)), fill='green', alpha=0.1) +
+    #   geom_line(aes(y=K2C(Td)), color='green')
+    # 
+    # fcst2 %>% ggplot(aes(x=datetime)) +
+    #   geom_col(aes(y=RR1c), color='blue')
+    
+    return(out)
+  }
+  return(NULL)
 }
 
 # mosmix_forecast('10382', '20210505')

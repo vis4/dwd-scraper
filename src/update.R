@@ -27,7 +27,8 @@ stationen <- read_fwf(url.stationen,
                         c('id','from','to','altitude','lat','lon','name','state')),
                       trim_ws = T,
                       locale = locale(encoding = 'latin1')) %>%
-  mutate(from=as.Date(as.character(from), '%Y%m%d'), to=as.Date(as.character(to), '%Y%m%d'))
+  mutate(from=as.Date(as.character(from), '%Y%m%d'), to=as.Date(as.character(to), '%Y%m%d')) %>% 
+  filter(to > Sys.Date()-3)
 
 if ('--historical' %in% args) {
 	download('historical')
@@ -37,7 +38,7 @@ download('recent')
 sapply(stationen$id, parse)
 
 # get forecast
-sapply(stationen$id, add_forecast)
+sapply(stationen$id, add_forecast_brightsky)
 
 stationen %>% write_csv('out/stations.csv')
 
