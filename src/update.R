@@ -16,6 +16,7 @@ dir.create('out/stations', showWarnings = F)
 
 source('src/download.R')
 source('src/parse.R')
+source('src/forecast.R')
 
 url.stationen <- 'https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/KL_Tageswerte_Beschreibung_Stationen.txt'
 
@@ -34,6 +35,9 @@ if ('--historical' %in% args) {
 download('recent')
 
 sapply(stationen$id, parse)
+
+# get forecast
+sapply(stationen$id, add_forecast)
 
 stationen %>% write_csv('out/stations.csv')
 
