@@ -33,9 +33,13 @@ stationen <- read_fwf(url.stationen,
 if ('--historical' %in% args) {
 	download('historical')
 }
-download('recent')
 
-sapply(stationen$id, parse)
+if (!('--no-download' %in% args)) {
+  download('recent')
+  
+  sapply(stationen$id, parse)
+}
+
 
 # get forecast
 sapply(stationen$id, add_forecast_brightsky)
