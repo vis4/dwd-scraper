@@ -35,7 +35,7 @@ add_forecast_brightsky <- function(dwd_station_id) {
       }
       last_date <- last_date+1
     }
-
+    if (nrow(weather) == 0) return()
     forecasts <- weather %>% 
       unique() %>% 
       mutate(timestamp=as.POSIXct(timestamp, format='%Y-%m-%dT%H:%M:%S', tz='UTC')) %>% 
