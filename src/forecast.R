@@ -12,6 +12,7 @@ needs(ggplot2, tidyverse, jsonlite)
 
 add_forecast_brightsky <- function(dwd_station_id) {
   datafile <- paste0('out/stations/', dwd_station_id, '.csv')
+  print(dwd_station_id)
   if (file.exists(datafile)) {
     data <- read_csv(datafile)
     if (nrow(data) < 1) {
@@ -23,7 +24,9 @@ add_forecast_brightsky <- function(dwd_station_id) {
     weather <- tibble()
     while (last_date <= Sys.Date()+1) {
       url <- paste0('https://api.brightsky.dev/weather?dwd_station_id=', dwd_station_id, '&date=', last_date)
-      df <- fromJSON(url)$weather
+      df <- tryCatch({ fromJSON(url) }, error=function(cond){ NULL })
+      if (is.null(df)) break
+      df <- df$weather %>% select(timestamp, temperature, precipitation, sunshine)
       if (nrow(df) > 0) {
         weather <- bind_rows(weather, df)
       }
