@@ -9,6 +9,7 @@ needs(ggplot2, tidyverse, jsonlite)
 #   bind_rows(read_excel('na_messnetz.xlsx') %>% 
 #               select(id=STATIONSKENNUNG, name=STATIONSNAME, dwdid=STATIONS_ID))
 # 
+station_id_map <- read.csv('station-ids.csv')
 
 add_forecast_brightsky <- function(dwd_station_id) {
   datafile <- paste0('out/stations/', dwd_station_id, '.csv')
@@ -22,7 +23,7 @@ add_forecast_brightsky <- function(dwd_station_id) {
     if (is.na(last_date) | Sys.Date() - last_date > 4) return()
     last_date <- last_date+1
     weather <- tibble()
-    while (last_date <= Sys.Date()+1) {
+    while (last_date <= Sys.Date()+5) {
       url <- paste0('https://api.brightsky.dev/weather?dwd_station_id=', dwd_station_id, '&date=', last_date)
       df <- tryCatch({ fromJSON(url) }, error=function(cond){ 
         print(paste('error loading', url))
@@ -36,10 +37,68 @@ add_forecast_brightsky <- function(dwd_station_id) {
       last_date <- last_date+1
     }
     if (nrow(weather) == 0) return()
-    forecasts <- weather %>% 
+    
+    weather <- weather %>% 
       unique() %>% 
-      mutate(timestamp=as.POSIXct(timestamp, format='%Y-%m-%dT%H:%M:%S', tz='UTC')) %>% 
-      mutate(date=as.Date(timestamp, tz='UTC')) %>%
+      mutate(datetime=as.POSIXct(timestamp, format='%Y-%m-%dT%H:%M:%S', tz='UTC')) %>% 
+      select(-timestamp)
+    
+    # load current weather
+    s <- station_id_map %>% filter(dwd_id == as.numeric(dwd_station_id))
+    if (nrow(s) == 1) {
+      wmo <- s$wmo_id[1]
+      current <- tryCatch({read_csv2(paste0('https://opendata.dwd.de/weather/weather_reports/poi/',
+                                          str_replace(sprintf('%-5s', wmo), ' ', '_'), '-BEOB.csv'),
+                                   skip = 2,
+                                   na = c('', '---'),
+                                   col_types = 'ccddddddddddddddddddddddddddddddddddddddddd',
+                                   locale = locale(decimal_mark =',',
+                                                   grouping_mark = '.')) %>% 
+        select(date=Datum,
+               time=`Uhrzeit (UTC)`,
+               temperature=`Temperatur (2m)`,
+               precipitation=`Niederschlag (letzte Stunde)`,
+               sunshine=`Sonnenscheindauer (letzte Stunde)`) %>%
+        mutate(datetime=as.POSIXct(paste(date, time), format='%d.%m.%y %H:%M')) %>% 
+        select(datetime, temperature, precipitation, sunshine) %>% 
+        filter(!is.na(temperature) & !is.na(precipitation))}, error=function(cond) {
+          tibble()
+        })
+      f <- paste0('data/', dwd_station_id, '-current.csv')
+      current_a <- tibble()
+      if (file.exists(f)) {
+        current_a <- read_csv(f, col_types = 'Dddd')
+      }
+      current <- bind_rows(current_a, current) %>% 
+        unique()
+      
+      if (nrow(current) > 0) {
+        # keep data for next time
+        current %>%
+          select(datetime, temperature, precipitation, sunshine) %>% 
+          filter(as.Date(datetime) > Sys.Date()-14) %>% 
+          arrange(desc(datetime)) %>% 
+          write_csv(f)
+        
+        na_weather <- weather %>% filter(is.na(temperature))
+        
+        if (nrow(na_weather) > 0) {
+          repair <- na_weather %>% 
+            select(datetime) %>% 
+            left_join(current, by=c("datetime"="datetime")) %>% 
+            unique()
+          
+          if (nrow(repair) > 0) {
+            weather <- weather %>%
+              filter(!is.na(temperature)) %>% 
+              bind_rows(repair)
+          }
+        }
+      }
+    }
+    
+    forecasts <- weather %>% 
+      mutate(date=as.Date(datetime, tz='UTC')) %>%
       group_by(date) %>%
       summarise(c=n(),
                 TNK=round(min(temperature), 2), 

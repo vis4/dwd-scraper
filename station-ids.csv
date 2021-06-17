@@ -1,0 +1,1054 @@
+dwd_id,wmo_id,name
+1228,10004,UFS TW Ems
+954,10007,UFS Deutsche Bucht
+2115,10015,Helgoland
+3032,10020,List auf Sylt
+2907,10022,Leck
+4393,10028,Sankt Peter-Ording
+1666,10033,Glücksburg-Meierwik
+4466,10035,Schleswig
+2437,10037,Schleswig-Jagel
+2303,10038,Hohn
+5930,10042,Schönhagen (Ostseebad)
+2961,10044,Leuchtturm Kiel
+2564,10046,Kiel-Holtenau
+5516,10055,Fehmarn
+3170,10067,Marienleuchte
+183,10091,Arkona
+4024,10093,Putbus
+1759,10097,Greifswalder Oie
+3631,10113,Norderney
+102,10124,Leuchtturm Alte Weser
+5640,10126,Wittmundhafen
+701,10129,Bremerhaven
+1200,10130,Elpersbüttel
+891,10131,Cuxhaven
+3639,10136,Nordholz (Flugplatz)
+704,10139,Bremervörde
+2429,10142,Itzehoe
+4039,10146,Quickborn
+1975,10147,Hamburg-Fuhlsbüttel
+6163,10150,Dörnick
+3897,10152,Pelzerhaken
+3086,10156,Lübeck-Blankensee
+596,10161,Boltenhagen
+4625,10162,Schwerin
+1694,10168,Goldberg
+4271,10170,Rostock-Warnemünde
+2796,10172,Laage (Flugplatz)
+298,10180,Barth
+1757,10184,Greifswald
+5142,10193,Ueckermünde
+5839,10200,Emden
+1503,10210,Friesoythe-Altenoythe
+691,10224,Bremen
+4745,10235,Soltau
+368,10238,Bergen
+1339,10246,Faßberg
+591,10249,Boizenburg
+3093,10253,Lüchow
+4642,10261,Seehausen
+3196,10264,Marnitz
+2794,10267,Kyritz
+5349,10268,Waren (Müritz)
+3552,10270,Neuruppin
+5109,10281,Trollenhagen
+7351,10282,Feldberg/Mecklenburg
+1869,10289,Grünow
+164,10291,Angermünde
+3254,10304,Meppen
+3023,10305,Lingen
+4174,10306,Rheine-Bentlage
+7374,10309,Ahaus
+342,10312,Belm
+1766,10315,Münster/Osnabrück
+963,10321,Diepholz
+4371,10325,"Salzuflen, Bad"
+5715,10334,Wunstorf
+769,10335,Bückeburg
+2014,10338,Hannover
+850,10343,Celle
+662,10348,Braunschweig
+5158,10356,Ummendorf
+1544,10359,Gardelegen
+3126,10361,Magdeburg
+1605,10365,Genthin
+5546,10368,Wiesenburg
+303,10376,Baruth
+3987,10379,Potsdam
+403,10381,Berlin-Dahlem (FU)
+430,10382,Berlin-Tegel
+433,10384,Berlin-Tempelhof
+427,10385,Berlin-Schönefeld
+3015,10393,Lindenberg
+5809,10394,Lindenberg (WPR)
+3158,10396,Manschnow
+1078,10400,Düsseldorf
+1303,10410,Essen-Bredeney
+3098,10418,Lüdenscheid
+5480,10424,Werl
+2483,10427,Kahler Asten
+3028,10430,"Lippspringe, Bad"
+6197,10433,Lügde-Paenbruch
+5347,10435,Warburg
+1504,10439,Fritzlar (Flugplatz)
+15207,10441,Schauenburg-Elgershausen
+7367,10442,Alfeld
+1691,10444,Göttingen
+2925,10449,Leinefelde
+656,10452,Braunlage
+722,10453,Brocken
+5490,10454,Wernigerode
+2044,10458,Harzgerode
+198,10460,Artern
+2932,10469,Leipzig/Halle
+2928,10471,Leipzig-Holzhausen
+5629,10474,Wittenberg
+2315,10476,Holzdorf (Flugplatz)
+3811,10480,Oschatz
+1048,10488,Dresden-Klotzsche
+1001,10490,Doberlug-Kirchhain
+7393,10495,Hoyerswerda
+880,10496,Cottbus
+1684,10499,Görlitz
+1572,10500,Geilenkirchen (Flugplatz)
+3623,10502,Nörvenich (Flugplatz)
+15000,10505,Aachen-Orsbach
+3660,10506,Nürburg-Barweiler
+2667,10513,Köln-Bonn
+7340,10516,Koblenz (Falckensteinkaserne)
+603,10519,Bonn-Roleber
+161,10520,Andernach
+3167,10526,"Marienberg, Bad"
+1639,10532,Gießen/Wettenberg
+7396,10534,Hoherodskopf/Vogelsberg
+7410,10537,Neu-Ulrichstein
+7368,10540,Eisenach
+2171,10542,"Hersfeld, Bad"
+5371,10544,Wasserkuppe
+3231,10548,Meiningen
+4501,10552,Schmücke
+1270,10554,Erfurt-Weimar
+3513,10557,Neuhaus am Rennweg
+4464,10564,Schleiz
+3821,10565,Osterfeld
+1612,10567,Gera-Leumnitz
+3946,10569,Plauen
+840,10574,Carlsfeld
+853,10577,Chemnitz
+1358,10578,Fichtelberg
+3166,10579,Marienberg
+5779,10582,Zinnwald-Georgenfeld
+2985,10591,Lichtenhain-Mittelndorf
+6232,10605,Neuheilenbach (NHB)
+5100,10609,Trier-Petrisberg
+766,10613,Büchel (Flugplatz)
+953,10615,Deuselbach
+5871,10616,Hahn
+2385,10618,Idar-Oberstein
+1580,10628,Geisenheim
+2601,10635,Kleiner Feldberg/Taunus
+1420,10637,Frankfurt/Main
+7341,10641,Offenbach-Wetterpark
+7412,10646,Neuhütten/Spessart
+3287,10648,Michelstadt-Vielbrunn
+5705,10655,Würzburg
+2597,10658,"Kissingen, Bad"
+867,10671,Lautertal-Oberlauter
+282,10675,Bamberg
+2261,10685,Hof
+7394,10686,Wunsiedel-Schönbrunn
+5397,10688,Weiden
+460,10704,Berus
+5029,10706,Tholey
+4336,10708,Saarbrücken-Ensheim
+5426,10724,Weinbiet
+5906,10729,Mannheim
+4177,10731,Rheinstetten
+13674,10733,Waibstadt
+3362,10736,Mühlacker
+4931,10738,Stuttgart-Echterdingen
+4928,10739,Stuttgart (Schnarrenberg)
+3761,10742,Öhringen
+3603,10743,Niederstetten
+2485,10747,Kaisersbach-Cronhütte
+7369,10756,Feuchtwangen-Heilbronn
+5440,10761,Weißenburg-Emetzheim
+3668,10763,Nürnberg
+4280,10765,Roth
+2773,10771,Kümmersbruck
+4104,10776,Regensburg
+1587,10777,Gelbelsee
+7370,10782,Waldmünchen
+4911,10788,Straubing
+1832,10791,Großer Arber
+5800,10796,Zwiesel
+1443,10803,Freiburg
+2812,10805,Lahr
+1468,10815,Freudenstadt
+2638,10818,Klippeneck
+3268,10827,Meßstetten
+4887,10836,Stötten
+2886,10837,Laupheim
+15444,10840,Ulm-Mähringen
+2023,10850,Harburg
+232,10852,Augsburg
+3484,10853,Neuburg/Donau (Flugplatz)
+2905,10856,Lechfeld
+2829,10857,Landsberg (Flugplatz)
+2410,10860,Ingolstadt (Flugplatz)
+5404,10863,Weihenstephan-Dürnast
+3379,10865,München-Stadt
+3715,10868,Oberschleißheim (Lustheim)
+1261,10869,Erding
+1262,10870,München-Flughafen
+7395,10872,Gottfrieding
+15191,10873,Isen (ISN)
+3366,10875,Mühldorf
+5856,10895,Fürstenzell
+1346,10908,Feldberg/Schwarzwald
+2712,10929,Konstanz
+7403,10945,Leutkirch-Herlazhofen
+2559,10946,Kempten
+3730,10948,Oberstdorf
+125,10954,Altenstadt
+5792,10961,Zugspitze
+2290,10962,Hohenpeißenberg
+1550,10963,Garmisch-Partenkirchen
+856,10982,Chieming
+50036456,89002,GEORG VON NEUMAYER
+3217,A051,Weesby
+5732,A112,Wrixum/Föhr
+791,A138,Bordelum
+1130,A159,Eggebek
+1379,A160,Flensburg (Schäferhaus)
+4405,A173,Satrup
+4896,A191,Wagersrott
+1963,A201,Hallig Hooge
+4919,A216,Strucklahnungshörn
+7298,A226,Hattstedt
+1813,A345,Groß Wittensee
+1266,A351,Erfde
+1827,A397,Großenbrode
+2734,A411,Krempel
+6105,A443,Ostenfeld (Rendsburg)
+4666,A473,Köhn
+5877,A480,Putlos
+2306,A481,Hohwacht
+788,A505,Büsum
+5057,A536,Haale
+7427,A653,Padenstedt (Pony-Park)
+5078,A699,Travemünde
+13687,A752,Weddelbrook
+5280,A762,Wittenborn
+4602,A791,"Schwartau,Bad -Groß Parin"
+5058,A940,Sprenge
+1736,A981,Grambek
+2201,B006,Hiddensee-Vitte
+6097,B040,Darßer Ort (SWN)
+4352,B085,Sagard
+6199,B158,Steinhagen-Negast
+6101,B203,Bastorf-Kägsdorf (SWN)
+5097,B258,Tribsees
+2578,B308,Kirchdorf/Poel
+2749,B320,Gersdorf
+1803,B334,Groß Lüsewitz
+3965,B365,Süderholz-Neuendorf
+6310,B382,Karlshagen
+15003,B471,Schmarsow
+2518,B482,Groß Kiesow-Schlagtow
+167,B488,Anklam
+839,B508,Carlow
+1769,B511,Grevesmühlen
+2272,B525,Ventschow
+312,B531,Baumgarten
+1888,B544,Parum
+5009,B556,Teterow
+1669,B565,Borrentin-Wolkwitz
+4080,B587,Rathebur
+1495,B629,Goldenbow
+15189,B650,Sukow-Levitzow
+5854,B670,Friedland
+4282,B687,Rothemühl
+7078,B710,Dodow
+3564,B728,Neustadt-Glewe-Friedrichsmoor
+3945,B747,Plau am See
+7077,B766,Groß Lukow
+4101,B818,Redefin
+6106,B853,Rechlin
+6109,B898,Grambow-Schwennenz
+1717,B923,Grabow (Kläranlage Fahlenkamp)
+3146,B926,Malk Göhren
+3297,B951,Krümmel
+3238,B995,Dewichow
+1981,C720,Hamburg-Neuwiedenthal
+619,E006,Borkum-Süderstraße
+7373,E008,Borkum-Flugplatz
+1030,E025,Dornum
+6091,E031,Spiekeroog (SWN)
+6157,E043,Wangerland-Hooksiel
+2844,E067,"Langen-Holßel, Kreis Cuxhaven"
+4841,E078,"Steinau, Kr. Cuxhaven"
+1451,E082,Freiburg/Elbe
+2822,E087,Lamstedt
+1056,E091,Drochtersen
+6108,E095,Ruthenstrom
+4857,E099,Mittelnkirchen-Hohenfelde
+2763,E103,Norden-Leybuchtpolder
+4803,E145,Butjadingen-Inte
+4920,E158,Beverstedt
+2465,E188,Jork-Moorende
+561,E200,Bockhorn-Grabstede
+1014,E207,Dollart-Kanalpolder
+3342,E212,Moormerland-Neermoor
+5518,E229,Westerstede
+3853,E232,Ovelgönne
+4078,E234,Rastede
+642,E235,Brake
+4594,E246,Schwanewede-Neuenkirchen
+5014,E254,Worpswede-Hüttenbusch
+760,E273,Rosengarten-Klecken
+2689,E277,Königsmoor
+542,E297,Bleckede-Walmsburg
+6093,E298,Wendisch Evern
+2355,E335,Hude/Oldenburg
+3848,E342,Ottersberg-Otterstedt
+4275,E355,Rotenburg (Wümme)
+5767,E364,Heeslingen-Wiersdorf
+15512,E374,Rehlingen-Ehlbeck
+5762,E387,Zernien
+6159,E402,Dörpen
+44,E426,Großenkneten
+5822,E438,Bassum
+4600,E445,Schwarme
+5209,E451,Verden-Dauelsen
+5146,E475,Uelzen
+5132,E501,Twist-Hebelermeer
+1792,E513,Groß Berßen
+292,E545,Barnstorf
+4883,E564,Frankenfeld-Hedern
+1336,E571,"Fallingbostel, Bad"
+7361,E586,Scharnhorst-Marwede
+1223,E601,Ringe-Großringe
+4683,E622,Fürstenau
+78,E626,Alfhausen
+988,E631,Dinklage
+2577,E651,"Kirchdorf, Kreis Diepholz"
+3612,E652,Nienburg
+4112,E659,Rehburg-Loccum
+4601,E662,Essel
+3558,E667,Neustadt am Rübenberge
+5382,E672,Wedemark-Elze
+848,E673,Celle (Stadt)
+5148,E688,Uetze
+7432,E691,Wittingen-Vorhop
+357,E704,"Bentheim, Bad"
+3820,E711,Ostercappeln-Schwagstorf
+1304,E718,"Essen-Brockhausen, Bad"
+4288,E727,"Rothenfelde, Bad"
+1993,E732,Hameln
+7425,E738,Rinteln-Volksen
+13675,E739,Hameln-Hastenbeck
+294,E744,Barsinghausen-Hohenbostel
+4367,E748,Salzhemmendorf-Lauenstein
+2011,E755,Hannover-Herrenhausen
+2012,E756,Hannover-Kirchrode
+13699,E762,Lehrte-Sievershausen
+4790,E764,Springe
+5676,E790,Wolfsburg (Südwest)
+4947,E792,Süpplingen
+13777,E798,Helmstedt-Emmerstedt
+1278,E799,Cremlingen-Destedt
+3844,E805,Ottenstein
+2323,E818,"Bevern, Kr. Holzminden"
+1170,E835,Eimen-Vorwohle
+3348,E839,Moringen-Lutterbeck
+3651,E857,Northeim-Stöckheim
+3650,E858,Northeim-Imbshausen
+4651,E864,Seesen
+7099,E871,Liebenburg-Othfresen
+2839,E884,Langelsheim-Astfeld
+2039,E897,"Harzburg, Bad"
+567,E902,Bodenfelde-Amelith
+378,E931,Berka
+2174,E944,Herzberg
+2175,E950,Herzberg-Lonau
+2890,E955,"Lauterberg,Bad-Bartolfelde"
+1039,E970,Dransfeld-Ossenfeld
+3280,F020,Meyenburg
+2438,F050,Uckerland-Karlstein
+4984,F069,Hohenreinkendorf
+2951,F105,Lenzen/Elbe
+2531,F108,Karstädt/Prignitz
+2779,F125,Kuhbier
+5643,F143,Wittstock-Rote Mühle
+3509,F151,Menz
+3308,F172,Mittenwalde/Uckermark
+3473,F178,Neuruppin-Gühlen Glienicke
+3881,F191,Passow
+7079,F199,Berkholz-Meyenburg
+3906,F210,Perleberg
+5745,F263,Zehdenick
+1810,F265,Schorfheide-Groß Schönebeck
+1497,F280,Friedrichswalde
+2625,F305,Kleßen
+2733,F325,Kremmen-Groß Ziethen
+3205,F338,Marwitz (Wasserwerk)
+7389,F361,Heckelberg
+5729,F385,Wustrow
+6265,F419,Wusterwitz
+5825,F431,Berge
+4637,F448,Staaken
+53,F451,Ahrensfelde
+4912,F470,Strausberg
+3376,F475,Müncheberg
+5684,F509,Wollin
+6253,F518,Brandenburg/Havel
+1801,F520,Groß Kreutz
+5555,F545,Thyrow
+3967,F598,Pohlitz
+735,F620,Brück-Gömnigk
+1350,F635,Felgentreu
+13712,F660,Münchehofe
+714,F681,Neu Madlitz
+6170,F695,Coschen
+2856,F707,Langenlipsdorf
+2278,F736,Hohenbucko
+3083,F742,Lübben-Blumenfelde
+504,F757,"Bischdorf, Kreis Oberspreewald"
+2997,F770,Lieberose
+1744,F878,Graustein
+1210,F925,Elsterwerda
+2627,F951,Klettwitz
+400,G002,Berlin-Buch
+420,G005,Berlin-Marzahn
+410,G006,Berlin-Kaniswall
+5513,H009,Westerkappeln
+4063,H012,Rahden-Kleinendorf
+3913,H027,Petershagen
+4849,H058,Steinfurt-Burgsteinfurt
+2254,H061,Hörstel-Riesenbeck
+3081,H081,Espelkamp-Isenstedt
+871,H119,Coesfeld
+2999,H142,Lienen-Kattenvenne
+13669,H145,Ostbevern-Schirlheide
+1241,H170,Enger
+7106,H174,Bielefeld-Deppendorf
+2629,H203,Kleve
+902,H212,Dahlem-Schmidtheim
+4150,H235,Reken
+6337,H247,Lüdinghausen-Brochtrup
+1046,H257,Drensteinfurt
+2027,H261,Harsewinkel
+13693,H265,Gütersloh/Ems
+2810,H281,"Lage, Kreis Lippe-Hörste"
+5733,H311,Xanten
+15190,H312,Xanten (Wasserwerk)
+13901,H330,Haltern (Wasserwerk)
+3795,H333,Olfen
+1595,H336,Gelsenkirchen-Buer
+1246,H361,Ennigerloh-Ostenfelde
+934,H372,Delbrück
+4368,H376,Salzkotten
+3031,H377,Lippstadt-Bökenförde
+644,H391,Brakel
+1590,H401,Geldern-Walbeck
+617,H411,Borken in Westfalen
+554,H412,Bocholt-Liedern (Wasserwerk)
+13670,H419,Duisburg-Baerl
+989,H420,Dinslaken
+13696,H443,Waltrop-Abdinghof
+4400,H460,"Sassendorf, Bad-Beusingsen"
+4313,H475,Rüthen
+5699,H477,Wünnenberg-Eilern
+613,H492,Borgentreich
+7344,H512,Nettetal-Hülst
+5064,H522,Tönisvorst
+13700,H542,Gevelsberg-Oberbröking
+6313,H543,Breckerfeld-Wengeberg
+5717,H547,Wuppertal-Buchenhofen
+15200,H548,Wuppertal
+3499,H568,Neuenrade-Blintrop
+7330,H572,Arnsberg-Neheim
+13952,H573,Arnsberg-Müschede
+1300,H579,Eslohe
+5360,H581,Warstein-Hirschberg
+15120,H590,Haaren
+6264,H591,Brilon-Thülen
+2110,H606,Heinsberg-Schleiden
+4127,H612,Reichshof-Eckenhagen
+1024,H635,Dormagen-Zons
+4741,H641,Solingen-Hohenscheid
+5619,H655,Wipperfürth-Gardeweg
+13713,H658,Meinerzhagen-Redlendorf
+216,H669,Attendorn-Neulisternohl
+2947,H678,Lennestadt-Theten
+4488,H681,Schmallenberg-Sellinghausen
+3215,H695,Medebach-Berge
+2473,H718,Jülich (Kläranlage)
+7378,H721,Bedburg-Weiler Hohenholz
+2968,H744,Köln-Stammheim
+13671,H755,Overath-Böke
+3321,H768,Mönchengladbach-Hilderath
+5468,H777,Wenden-Dörnscheid
+389,H791,"Berleburg, Bad-Arfeld"
+390,H795,"Berleburg, Bad-Stünzel"
+3591,H827,Nideggen-Schmidt
+3540,H862,Neunkirchen-Seelscheid-Krawinkel
+7416,H884,Birkelbach
+796,H889,Burbach-Würgendorf
+3339,H908,Monschau-Kalterherberg
+1327,H932,Weilerswist-Lommersum
+2497,H981,Kall-Sistig
+3904,J702,Perl-Nennig
+3263,J709,Merzig
+5433,J728,Weiskirchen/Saar
+3625,J731,Nohfelden-Gonnesweiler
+4490,J812,Schmelz-Hüttersdorf
+3545,J815,Neunkirchen-Wellesweiler
+2331,J846,Homburg/Saar
+6217,J908,Saarbrücken-Burbach
+2211,K017,Hilgenroth
+7499,K026,Wallmenroth
+3490,K038,"Neuenahr, Bad-Ahrweiler"
+2362,K057,Hümmerich
+15044,K158,Neuwied-Feldkirchen-Hüllenberg
+4508,K210,Schneifelforsthaus
+4279,K212,Roth bei Prüm
+2213,K219,Lissendorf
+4219,K230,Rodder
+3340,K282,Montabaur
+978,K295,Holzheim bei Diez
+5616,K300,Winterspelt
+200,K308,Lauperath-Scheidchen
+4017,K310,Prüm-Watzerath
+942,K318,Densborn
+3602,K326,Oberstadtfeld
+723,K354,Kail
+1598,K380,Oberbachheim
+1964,K419,Olsdorf
+3155,K440,Manderscheid-Sonnenhof
+5635,K446,Wittlich
+535,K463,Blankenrath
+4709,K471,Simmern-Wahlbach
+3584,K509,Newel
+5758,K515,Zemmer (Forsthaus Mülchen)
+4301,K568,"Kreuznach, Bad"
+15976,K579,Ober-Olm/Bellem
+3137,K584,Mainz-Lerchenberg (ZDF)
+6100,K589,Hahnheim
+5099,K611,Trier-Zewen
+2595,K650,Kirn
+316,K666,Bayerfeld-Steckweiler -Schmalfelderhof
+150,K685,Alzey
+5692,K699,Worms
+3905,K706,Perl-Sinz-Renglischberg
+1650,K747,Henschtal
+1011,K761,Dörrmoschel-Felsbergerhof
+4323,K762,Ruppertsecken
+1870,K784,Grünstadt
+2486,K863,Kaiserslautern
+15978,K864,Sembach
+5103,K866,Trippstadt-Neuhof
+1072,K881,"Dürkheim, Bad"
+3939,K925,Pirmasens
+4310,K969,Rülzheim
+377,K988,"Bergzabern, Bad"
+5086,L021,Trendelburg
+5279,L031,Wesertal-Lippoldsberg
+961,L052,Diemelstadt-Rhoden
+2988,L071,Liebenau-Haueda
+6303,L101,Willingen/Hochsauerland
+2718,L113,Korbach-Rhena
+5133,L121,Twistetal-Mühlhausen
+5297,L125,Waldeck-Alraft
+194,L130,"Arolsen-Landau, Bad"
+197,L131,"Arolsen-Volkhardinghausen, Bad"
+5646,L171,Witzenhausen-Ziegenhagen
+310,L201,Battenberg-Hof Karlsburg
+5851,L215,Frankenberg-Geismar
+817,L217,Burgwald-Bottendorf
+5240,L222,Vöhl-Buchenberg
+5263,L245,Wabern-Hebel
+4763,L286,Sontra
+1297,L291,Eschwege
+13701,L292,Eschwege-Eltmannshausen
+2152,L299,Herleshausen-Archfeld
+15490,L300,Eschenburg-Eibelshausen
+5524,L312,Wetter/Hessen-Amönau
+3164,L319,"Cölbe, Kr. Marburg-Biedenkopf"
+1645,L340,Gilserberg-Moischeid
+3527,L355,Neukirchen-Hauptschwenda
+1055,L409,Driedorf
+979,L411,Dillenburg
+158,L442,Amöneburg-Rüdigheim
+90,L463,Alsfeld
+91,L464,Alsfeld-Eifa
+2066,L483,Haunetal-Wehrda
+5294,L505,Waldbrunn-Lahr
+3042,L511,Löhnberg-Obershausen
+211,L521,Aßlar Klein-Altenstädten
+4560,L555,Schotten
+2897,L561,Lautertal-Hörgenau
+3911,L582,Petersberg-Marbach
+1526,L585,Fulda-Horas
+4978,L592,Tann/Rhön
+6344,L602,Runkel-Ennerich
+5416,L612,Weilmünster
+837,L617,"Camberg, Bad"
+3413,L631,Münzenberg-Gambach
+3442,L635,"Nauheim, Bad"
+1561,L652,Gedern-Schönhausen
+4480,L678,Schlüchtern-Herolz
+1750,L685,Grebenstein
+2293,L714,Hohenstein-Breithardt
+5300,L722,Waldems-Reinborn
+2329,L732,"Homburg, Bad (Filterwerk)"
+5225,L744,"Vilbel, Bad-Dortelweil"
+3589,L751,Nidderau-Erbstadt
+1863,L771,Gründau-Breitenborn
+479,L773,Wächtersbach
+4308,L803,Rüdesheim-Presberg
+5542,L819,Wiesbaden-Biebrich
+5541,L821,Wiesbaden-Auringen
+4090,L829,Raunheim
+1424,L841,Frankfurt/Main-Westend
+3136,L850,Mühlheim/Main
+1814,L865,Groß-Gerau-Wallerstädten
+917,L886,Darmstadt
+4230,L891,Rödermark-Ober-Roden
+4132,L892,Reinhardshagen-Vaake
+4411,L894,Schaafheim-Schlierbach
+2900,L926,Lautertal/Odenwald-Reichenbach
+3284,L947,Michelstadt
+14157,L979,Birkenau
+7391,L987,Oberzent-Beerfelden-Vogelherd
+330,L988,Oberzent-Beerfelden
+5484,M031,Ellrich-Werna
+4135,M056,Reinholterode
+2562,M146,Helbedündorf-Keula
+6305,M225,Mühlhausen/Thüringen-Görmar
+3304,M259,Freienbessingen
+1320,M281,Etzleben
+7321,M299,Olbersleben
+5084,M301,Südeichsfeld-Wendehausen
+896,M348,Dachwig
+87,M357,Alperstedt
+6272,M405,Moorgrund Gräfen-Nitzendorf
+336,M412,Hörselberg-Hainich-Behringen
+379,M439,"Berka, Bad (Flugplatz)"
+5424,M448,Weimar-Schöndorf
+6271,M473,Crossen/Elster-Nickelsdorf
+3279,M480,Meuselwitz
+4997,M488,Starkenberg-Tegkwitz
+7328,M500,Ponitz
+5335,M520,Waltershausen
+2444,M552,Jena (Sternwarte)
+753,M557,Bucha
+550,M565,Bobeck
+2618,M620,Kleiner Inselsberg
+3364,M640,Drei Gleichen-Mühlberg
+962,M651,Stadtilm-Dienstedt
+6268,M669,Uhlstädt-Kirchhasel-Niederkrossen
+5395,M691,Harth-Pöllnitz Neundorf
+1573,M700,Geisa
+3204,M732,Martinroda
+4605,M756,Schwarzburg
+13711,M765,Krölpa-Rockendorf
+3289,M772,Schmieritz-Weltwitz
+7419,M799,Langenwetzendorf-Göttendorf
+1411,M805,Birx/Rhön
+1435,M833,Ilmenau-Frauenwald
+4469,M834,Schleusingen
+2541,M846,Katzhütte
+2992,M879,Remptendorf
+6270,M909,Römhild-Sülzdorf
+7428,M927,Veilsdorf
+3248,M938,Frankenblick-Mengersgereuth-Hämmern
+3491,M945,Föritztal-Neuenbau
+3034,M965,"Lobenstein, Bad"
+2233,M978,Hirschberg
+7421,M998,Föritztal-Neuhaus-Schierschnitz
+966,N104,Diesdorf
+7372,N158,Ballerstedt
+4618,N182,Schwarzholz
+4555,N199,Schollene
+2662,N214,Köckte
+1770,N268,Grieben
+6273,N272,Demker
+7285,N305,Bösdorf
+622,N315,Westheide-Born
+874,N345,Zielitz
+797,N366,Burg-Blumenthal
+1052,N398,Drewitz bei Burg
+1847,N426,Weißenfels-Wengelsdorf
+630,N435,Bottmersdorf-Klein Germersleben
+4412,N440,Schackensleben
+2673,N463,Königsborn
+775,N500,Osterwieck-Rimbeck
+213,N511,Sargstedt
+6266,N520,Huy-Pabstorf
+1793,N532,Hecklingen-Groß Börnecke
+287,N543,Walternienburg-Ronney
+445,N548,Bernburg/Saale (Nord)
+7500,N553,Badewitz bei Zerbst
+1067,N563,Düben
+7364,N566,Jeßnitz
+3445,N587,Jessen (Elster)-Naundorf
+4445,N601,Wernigerode-Schierke
+4878,N616,Oberharz am Brocken-Stiege
+4032,N620,Quedlinburg
+3226,N632,Aschersleben-Mehringen
+2704,N652,Köthen (Anhalt)
+4052,N671,Kemberg-Radis
+974,N714,Südharz-Dietersdorf
+5814,N731,Mansfeld-Annarode
+4036,N748,Querfurt-Mühle Lodersleben
+815,N750,Seegebiet Mansfelder Land-Dederstedt
+2878,N769,"Lauchstädt, Bad"
+124,N815,"Bibra, Bad-Altenroda"
+5763,N855,Freyburg/Unstrut-Zeuchfeld
+7420,N924,Naumburg/Saale-Kreipitzsch
+5750,N977,Zeitz
+3426,O025,"Muskau, Bad"
+721,O039,Schönwölkau-Brinnis
+2641,O057,Klitzschen bei Torgau
+7423,O099,Hähnichen-Trebus
+1166,O120,Eilenburg
+7323,O141,Belgershain
+633,O182,Boxberg
+1848,O204,Markranstädt-Großlehna
+7334,O248,Heyda bei Riesa
+7335,O251,Strauch
+3094,O268,Kamenz-Cunnersdorf
+13688,O305,Pegau
+7326,O322,Grimma-Kleinbothen
+3234,O348,Garsebach bei Meißen
+314,O384,"Kubschütz, Kr. Bautzen"
+1051,O457,Dresden-Strehlen
+1050,O458,Dresden-Hosterwitz
+4023,O461,Pulsnitz
+6129,O484,Sohland/Spree
+2958,O499,Ostritz
+131,O510,Geringswalde-Altgeringswalde
+6314,O536,Nossen
+1441,O538,Freiberg
+13654,O543,Wilsdruff-Mohorn
+3740,O566,Lohmen/Sachsen
+7337,O580,Dürrhennersdorf
+2252,O598,Bertsdorf-Hörnitz
+7327,O625,Frankenberg-Altenhain
+991,O660,Dippoldiswalde-Reinberg
+13774,O708,Crimmitschau-Mannichswalde
+7418,O725,Sankt Egidien-Kuhschnappel
+5943,O795,Rosenthal-Bielatal
+5797,O805,Lichtentanne
+7343,O842,Deutschneudorf-Brüderwiese
+7333,O846,Marienberg-Rübenau
+222,O863,Aue
+7329,O868,Treuen
+2372,O877,Stützengrün-Hundshübel
+4982,O882,Tannenberg
+3175,O888,Raschau
+551,O950,Weischlitz-Heinersgrün
+6269,O974,Klingenthal-Kamerun
+1207,O980,"Elster, Bad-Sohl"
+1282,O993,Erlbach-Eubabrunn
+3700,P004,Oberleichtersbach-Modlos
+4377,P013,Sandberg
+3836,P022,Ostheim v.d. Rhön
+3207,P029,Maßbach
+7392,P032,Aubstadt
+2680,P033,"Königshofen, Bad"
+4958,P038,Sulzdorf an der Lederhecke
+2431,P058,Itzgrund-Herreth
+3080,P062,Ludwigsstadt-Lauenstein
+2750,P066,Kronach
+812,P068,Burgkunstadt
+5017,P071,Teuschnitz
+6338,P073,"Steben, Bad"
+3497,P079,Ludwigschorgast
+4818,P088,Stammbach-Querenbach
+4109,P095,Rehau
+4548,P098,Selb/Oberfranken-Lauterbach
+6196,P099,Selb-Spielberg
+2480,P100,Kahl/Main
+2109,P104,Heinrichsthal
+6336,P113,Lohr/Main-Halsbach
+191,P125,Arnstein-Müdesheim
+6347,P131,Schonungen-Mainberg
+2709,P137,Kolitzheim
+4016,P138,Prosselsheim-Seligenstadt
+6200,P141,Königsberg/Bayern-Holzhausen
+1107,P148,Ebrach
+7430,P151,Rentweinsdorf-Treinfeld
+6195,P158,Scheßlitz-Köttensdorf
+5034,P164,Thurnau-Tannfeld
+227,P168,Aufseß-Hochstahl
+320,P175,Heinersreuth-Vollhof
+885,P179,Creußen-Bühl
+1357,P182,Fichtelberg/Oberfranken-Hüttstadl
+5303,P185,Waldershof-Schafbruck
+2556,P188,Kemnath
+3999,P189,Pressath-Mühlberg
+2274,P190,Hohenberg/Eger
+3121,P197,Mähring
+5046,P198,Tirschenreuth-Lodermühl
+130,P222,Altertheim-Oberaltertheim
+789,P228,Bütthard
+2600,P232,Kitzingen
+3179,P236,Markt Bibart
+15122,P237,Ergersheim-Neuherberg
+5149,P238,Gollhofen
+1279,P257,Möhrendorf-Kleinseebach
+1689,P262,Gößweinstein
+1721,P265,Gräfenberg-Kasberg
+3948,P270,Plech
+3571,P280,Neustadt am Kulm-Filchendorf
+1458,P287,Freihung-Großschönbrunn
+1392,P294,Flossenbürg
+5285,P298,Waidhaus-Pfrentsch
+4546,P299,Schönsee-Dietersdorf
+6201,P300,Simmershofen-Adelhofen
+801,P302,Burgbernheim
+4287,P305,Rothenburg ob der Tauber
+3485,P308,Neuburg/Kammel-Langenhaslach
+970,P315,Dietenhofen
+5405,P317,Weihenzell-Grüb
+6158,P319,Weidenbach-Weiherschneidbach
+2860,P321,Langenzenn
+4248,P327,Rohr/Mittelfranken-Dechendorf
+3667,P333,Nürnberg-Netzstall
+4599,P337,Wendelstein-Kleinschwarzenlohe
+3975,P343,Pommelsbrunn-Mittelburg
+3534,P350,Neumarkt-Höhenberg
+151,P354,Amberg-Unterammersricht
+3319,P355,Röllbach
+2538,P356,"Kastl, Kreis Amberg-Sulzbach"
+4494,P359,Schmidmühlen
+4493,P363,Schmidgaden
+4592,P366,Schwandorf
+6216,P370,Trausnitz-Reisach
+3739,P372,Oberviechtach
+118,P374,Altendorf
+4224,P379,Roding-Neubäu
+5401,P389,"Weiding, Kreis Cham-Dalking"
+985,P405,Dinkelsbühl-Oberwinstetten
+2064,P411,Haundorf-Obererlbach
+6096,P412,Altmühlsee
+3972,P418,Polsingen-Döckingen
+5023,P425,Thalmässing
+360,P433,Berching
+3875,P441,Parsberg/Oberpfalz-Eglwang
+359,P444,Beratzhausen
+4185,P448,Riedenburg
+3617,P453,Nittenau-Harting
+103,P460,Hagelstadt
+4559,P463,Schorndorf-Knöbling
+5548,P467,Wiesenfelden-Utzenzell
+7350,P472,Prackenbach-Neuhäusl
+4387,P477,Sankt Englmar
+6215,P481,Lam-Lambach
+3621,P501,Reimlingen
+240,P505,Aura im Sinngrund
+7319,P515,Donauwörth-Osterweiler
+4159,P521,Tagmersheim-Blossenau
+1161,P522,Eichstätt-Landershofen
+2700,P532,Kösching
+6312,P542,Markt Erlbach-Mosbach
+7075,P548,Elsendorf-Horneck
+1578,P549,Geisenfeld-Eichelberg
+13676,P551,Langquaid-Oberschneidhart
+3147,P555,Mallersdorf-Pfaffenberg/Niederbayern
+2294,P557,Hohenthann
+589,P571,Bogen-Pfelling
+3271,P572,Metten
+6191,P581,Kirchberg/Niederbayern -Zell
+6161,P585,Osterhofen-Thundorf
+4354,P586,Saldenburg-Entschenreuth
+1735,P594,Grainet-Rehberg
+2376,P597,Büchlberg-Tannöd
+4755,P599,Sonnen
+983,P602,Dillingen/Donau-Fristingen
+1886,P606,Günzburg
+2792,P618,Diedorf/Schwaben-Biburg
+4065,P621,Rain am Lech-Wallerdorf
+4567,P627,Schrobenhausen
+142,P629,Altomünster-Maisbrunn
+4441,P637,Scheyern
+5470,P639,Fahrenzhausen
+4946,P642,Schweitenkirchen-Sünzhausen
+3435,P645,Nandlstadt
+13710,P655,Landshut-Reithof
+3722,P659,Oberschleißheim
+3607,P661,Loiching
+3153,P663,Mamming-Schneiderberg
+5230,P666,Vilsbiburg
+1332,P674,"Falkenberg,Kr.Rottal-Inn"
+5721,P678,Wurmannsquick-Egelsberg
+73,P681,Aldersbach-Kriestorf
+3919,P687,Pfarrkirchen
+13932,P688,Rotthalmünster (Landwirtschaftsamt)
+3960,P689,Pocking
+5161,P699,Untergriesbach-Glotzing
+5444,P702,Weißenhorn-Oberreichenbach
+6346,P741,Maisach-Galgen
+3438,P760,Nassenfels
+2416,P765,Isen-Westach
+1103,P768,Ebersberg-Halbing
+5123,P785,Tüßling
+1237,P788,Tacherting-Spreit
+4706,P794,Simbach/Inn
+3244,P801,Memmingen
+3849,P803,Ottobeuren
+217,P804,Attenkam
+15555,P817,Kaufbeuren-Oberbeuren
+5169,P818,Kraftisried
+2387,P821,Buchloe
+5227,P824,Vilgertshofen-Pflugdorf
+4850,P829,Steingaden-Lauterbach
+7431,P830,Oberhaching-Laufzorn
+5538,P831,Wielenbach (Demollstr.)
+4413,P846,Schäftlarn-Kloster Schäftlarn
+2319,P856,Holzkirchen
+1844,P862,Feldkirchen-Westerham-Lenzmühle
+2415,P870,Irschenberg-Kasthub
+6211,P873,Vogtareuth (Kläranlage)
+154,P874,Amerang-Pfaffing
+857,P875,Chiemsee-Herrenchiemsee
+4261,P877,Rosenheim
+5111,P881,Trostberg
+4704,P887,Sigmarszell-Zeisertsweiler
+5276,P892,Waging am See
+5000,P893,Teisendorf
+2573,P894,Waging am See-Schnöbling
+15520,P900,Frasdorf-Greimelberg
+6102,P903,Lindau (SWN)
+7105,P904,Siegsdorf-Höll
+3714,P908,Oberreute
+2405,P914,Immenstadt-Reute
+275,P916,Balderschwang
+3857,P924,Oy-Mittelberg-Petersthal
+15214,P935,Halblech-Bayerniederhofen
+2708,P942,"Kohlgrub, Bad (Rosshof)"
+3677,P944,Oberammergau
+808,P946,"Mehring, Kr. Altötting-Niederholz"
+3307,P948,Mittenwald-Buckelwiesen
+6103,P949,Mittenwald/Obb.
+6257,P956,Jachenau-Tannern
+2740,P958,Kreuth-Glashütte
+5262,P960,Waakirchen-Demmelberg
+4617,P966,Obere Firstalm/Schlierseer Berge
+653,P971,Brannenburg-Degerndorf
+205,P974,Aschau-Stein
+3679,P975,Kiefersfelden-Gach
+5941,P982,Reit im Winkl
+7424,P991,Piding
+3192,P994,Marktschellenberg
+6203,P995,Ramsau-Schwarzeck/Schmuck
+6190,P996,Berchtesgaden
+15514,Q017,Heidelberg-Kurpfalzhof
+3448,Q027,Neckargemünd-Kleingemünd
+7104,Q033,Königheim
+1216,Q047,Elztal-Rittersbach
+5327,Q053,Walldürn
+755,Q055,"Buchen, Kr. Neckar-Odenwald"
+7429,Q059,Seckach
+4881,Q060,Stockach
+6275,Q061,Notzingen
+7187,Q062,Freudenberg/Main-Boxtal
+2880,Q066,Lauda-Königshofen-Heckfeld
+3257,Q076,"Mergentheim, Bad-Neunkirchen"
+5275,Q104,Waghäusel-Kirrlach
+6260,Q165,Ingelfingen-Stachenhausen
+2787,Q171,Kupferzell-Rechbach
+3734,Q242,Obersulm-Willsbach
+15547,Q243,Heilbronn/Neckar
+5711,Q261,Wüstenrot-Oberheimbach
+2575,Q292,Kirchberg/Jagst-Herboldshausen
+4880,Q295,Stimpfach-Weipertshofen
+5559,Q318,"Wildbad, Bad-Calmbach"
+3925,Q332,Pforzheim-Ispringen
+731,Q333,Bruchsal-Heidelsheim
+20,Q334,Abtsgmünd-Untergröningen
+4349,Q341,Sachsenheim
+6259,Q351,Großerlach-Mannenweiler
+10510,Q375,Winterbach/Remstal
+6262,Q378,Schwäbisch Gmünd-Weiler
+1197,Q382,Ellwangen-Rindelbach
+13698,Q395,Lauchheim (Berghof)
+4169,Q404,Rheinau-Memprechtshofen
+2546,Q408,Kehl-Odelshofen
+4315,Q409,Baiersbronn-Ruhestein
+2349,Q410,Hornisgrinde
+257,Q411,Baden-Baden-Geroldsau
+2388,Q412,Ihringen
+4710,Q425,Simmersfeld
+5562,Q437,Neubulach-Oberhaugstett
+4160,Q440,Renningen-Ihinger Hof
+279,Q461,Baltmannsweiler-Hohengehren
+13716,Q481,Blumberg-Randen
+301,Q482,Bartholomä
+7331,Q485,Hermaringen-Allewind
+3440,Q491,Nattheim-Fleinheim
+1089,Q511,Durbach-Ebersweier
+1602,Q518,Ohlsbach
+269,Q522,Baiersbronn-Mitteltal
+4294,Q554,Rottenburg-Kiebingen
+3278,Q561,Metzingen
+5511,Q574,Westerheim
+2814,Q579,Merklingen
+5664,Q622,Wolfach
+1937,Q642,Haigerloch-Weildorf
+2074,Q651,Hechingen
+7138,Q655,Burladingen-Hausen
+2292,Q663,Hohenstein-Bernloch
+3402,Q671,Münsingen-Apfelstetten
+3418,Q679,Ehingen-Kirchen
+1224,Q702,Emmendingen-Mundingen
+5453,Q703,Weisweil-Waldeckhof
+1214,Q712,Elzach-Fisnacht
+2159,Q713,Herrenberg
+2050,Q715,Haslach im Kinzigtal
+4712,Q716,Simonswald-Obersimonswald
+1290,Q731,Eschbronn-Mariazell
+4300,Q733,Rottweil
+5229,Q738,Villingen-Schwenningen
+3519,Q739,Neuhausen ob Eck-Unterschwandorf
+13965,Q740,Balingen-Bronnhaupten
+2850,Q762,Langenenslingen-Ittenhausen
+3247,Q763,Mengen-Ennetach
+4189,Q771,"Altheim, Kreis Biberach"
+13715,Q786,Biberach an der Riß-Bergerhausen
+4703,Q788,Sigmaringen-Laiz
+931,Q790,Deggenhausertal-Azenweiler
+15478,Q794,Dietenheim
+757,Q811,Buchenbach
+684,Q813,Breitnau
+1176,Q822,Eisenbach
+2953,Q823,Lenzkirch-Ruhbühl
+5688,Q824,Dachsberg-Wolpadingen
+5688,Q824,Dachsberg-Wolpadingen
+1584,Q848,Geisingen
+3927,Q864,Pfullendorf
+11,Q870,Donaueschingen (Landeplatz)
+4094,Q879,"Weingarten, Kr. Ravensburg"
+15810,Q880,Aulendorf-Blönried
+5319,Q885,"Waldsee, Bad-Reute"
+259,Q887,Müllheim
+5724,Q891,Rot an der Rot-Buch
+7322,Q902,Malsburg-Marzell
+2377,Q903,Kandern-Gupf
+4175,Q909,Rheinfelden
+5059,Q911,Todtmoos
+1013,Q913,Dogern
+498,Q922,Ühlingen-Birkendorf
+5412,Q925,Weilheim-Bierbronnen
+5731,Q926,Wutöschingen-Ofteringen
+6263,Q942,Singen
+6099,Q945,Gailingen
+1711,Q946,Gottmadingen
+6107,Q951,Sipplingen (SWN)
+1490,Q976,Friedrichshafen
+6258,Q978,Friedrichshafen-Unterraderach
+7382,Q999,Wangen/Allgäu-Schwaderberg
