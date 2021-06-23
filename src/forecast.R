@@ -67,7 +67,8 @@ add_forecast_brightsky <- function(dwd_station_id) {
       f <- paste0('data/', dwd_station_id, '-current.csv')
       current_a <- tibble()
       if (file.exists(f)) {
-        current_a <- read_csv(f, col_types = 'Dddd')
+        # current_a <- read_csv(f)
+        current_a <- read_csv(f, col_types = 'Tddd')
       }
       current <- bind_rows(current_a, current) %>% 
         unique()
